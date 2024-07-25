@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>FormValidation</title>
+</head>
+<body>
+    <div class="container">
+        <form id="form" onsubmit="onFormSubmit(event)">
+            <h1>Person Details</h1>
+            <div class="input-group">
+                <label for="firstname">Firstname</label>
+                <input type="text" id="firstname" name="firstname">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" id="lastname" name="lastname">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <div class="error"></div>
+            </div>
+
+            <button type="submit">ADD</button>
+        </form>
+
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
